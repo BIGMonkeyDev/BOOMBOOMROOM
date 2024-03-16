@@ -185,20 +185,20 @@ for example <img src="{CONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-15 w-a
 </div>
 {/if}
 
-<footer class="p-4 text-center mb-8 bg-transparent-800 text-white">
+<footer class="p-4 text-center mb-8 bg-transparent-800 text-[white]">
     
     <div class="mx-auto flex items-center justify-center">
-        <a href="https://twitter.com/EternalReflects" target="_blank" class="mx-2">
+        <a href="https://twitter.com/PrimeApe_Pulse" target="_blank" class="mx-2">
             <img src={TWITTER_ICON} class="w-16 inline" alt="Follow on Twitter" />
         </a>
         <div class="mx-2">
-            &copy; Copyright <strong class="text-white">
-                Eternal Reflections
+            &copy; Copyright <strong class="text-[#ff0099]">
+                Prime Ape 
             </strong>
             <span class="mx-1">&bull;</span> <!-- Bullet separator -->
             All Rights Reserved
         </div>
-        <a href="https://t.me/EternalReflections" target="_blank" class="mx-2">
+        <a href="https://t.me/PrimeApePulse" target="_blank" class="mx-2">
             <img src={TELEGRAM_ICON} class="w-16 inline" alt="Join Telegram" />
         </a>
     </div>
