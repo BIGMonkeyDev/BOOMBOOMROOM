@@ -107,7 +107,7 @@ for example <img src="{CONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-15 w-a
     <div class="mx-auto text-center w-full md:w-fit space-x-0 md:space-x-2 space-y-1 md:space-y-0 flex flex-col md:flex-row">
         
         <div class="border-2 border-transparent bg-transparent-500 w-full md:w-44  ">
-            <a href="https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/" class="block text-s text-white hover:underline">
+            <a href="https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/?outputCurrency=0xC6B28B2E3Bf9fF26299D540a4D654F7ade4dFdB0" class="block text-s text-white hover:underline">
                 <img src="{BUY_LOGO}" alt="Button Logo" class="mx-auto h-15 w-auto mb-2" />                
             </a>
         </div>      
