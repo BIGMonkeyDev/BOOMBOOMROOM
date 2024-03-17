@@ -383,7 +383,7 @@
             <!-- Other content -->            
             <h5>
                 {#if rewards => 0}
-                    {format.wei(rewards)} <span class="text-xs">Abyss</span>
+                    {format.wei(rewards)} <span class="text-xs">Bananas</span>
                     {#if rewardsAsUSD}
                     <div class="text-xs text-green-200 mt-1">
                         ({format.usd(rewardsAsUSD)})
