@@ -21,6 +21,7 @@
     import Prime_LOGO from "$lib/assets/banner.png";
     import BUY_LOGO from "$lib/assets/buy.png";
     import CHART_LOGO from "$lib/assets/chart.png";
+    import MERCH_LOGO from "$lib/assets/merch.png";
     import CONNECT_LOGO from "$lib/assets/connect.png";
     import DISCONNECT_LOGO from "$lib/assets/disconnect.png";
 
@@ -101,31 +102,31 @@ for example <img src="{CONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-15 w-a
                 <!-- <div class="text-white">Connect Wallet</div> -->
             {/if}
         </div>
-    </div>
-
-     
-    <div class="mx-auto text-center w-full md:w-fit space-x-0 md:space-x-2 space-y-1 md:space-y-0 flex flex-col md:flex-row">
-        
+    </div>     
+    <div class="mx-auto text-center w-full md:w-fit space-x-0 md:space-x-2 space-y-1 md:space-y-0 flex flex-col md:flex-row">        
         <div class="border-2 border-transparent bg-transparent-500 w-full md:w-44  ">
             <a href="https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/?outputCurrency=0xC6B28B2E3Bf9fF26299D540a4D654F7ade4dFdB0" class="block text-s text-white hover:underline">
-                <img src="{BUY_LOGO}" alt="Button Logo" class="mx-auto h-15 w-auto mb-2" />                
+                <img src="{BUY_LOGO}" alt="Button Logo" class="mx-auto h-20 w-auto mb-2" />                
             </a>
-        </div>      
-        
+        </div> 
         <div class="border-2 border-transparent bg-transparent-500 w-full md:w-44  ">
-            <a href=" https://dexscreener.com/pulsechain/0xd3cc40772454a1eeadd36a69e31067646c04b0cb " class="block text-s text-white hover:underline">
-                <img src="{CHART_LOGO}" alt="Chart Logo" class="mx-auto h-15 w-auto mb-2" />  
+            <a href="https://my-store-f0acaa.creator-spring.com/" class="block text-s text-white hover:underline">
+                <img src="{MERCH_LOGO}" alt="Merch Logo" class="mx-auto h-20 w-auto mb-2" />  
             </a>
         </div>
-        
+        <div class="border-2 border-transparent bg-transparent-500 w-full md:w-44  ">
+            <a href=" https://dexscreener.com/pulsechain/0xd3cc40772454a1eeadd36a69e31067646c04b0cb " class="block text-s text-white hover:underline">
+                <img src="{CHART_LOGO}" alt="Chart Logo" class="mx-auto h-20 w-auto mb-2" />  
+            </a>
+        </div>       
         <div class="border-2 border-transparent bg-transparent-500 w-full md:w-44">
             {#if !$connected}
                 <button on:click={() => connectModalOpen = true} class="block text-s text-white hover:underline">
-                    <img src="{CONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-15 w-auto mb-2 connect-box">
+                    <img src="{CONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-20 w-auto mb-2 connect-box">
                 </button>
             {:else}
                 <button on:click={disconnectWagmi} class="block text-s text-white hover:underline">
-                    <img src="{DISCONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-15 w-auto mb-2 connect-box">
+                    <img src="{DISCONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-20 w-auto mb-2 connect-box">
                 </button>
             {/if}
         </div>
@@ -140,8 +141,6 @@ for example <img src="{CONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-15 w-a
     </div>
 </div>
 </div>
-
-
 
 {#if connectModalOpen}
 <div transition:fade={{ delay: 128, duration: 256 }} class="z-40 absolute top-0 left-0 insert-0  bg-black bg-opacity-50 overflow-y-auto h-screen w-full flex justify-center items-center" id="withdrawModal">
