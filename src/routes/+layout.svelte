@@ -110,8 +110,7 @@ for example <img src="{CONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-15 w-a
             <a href="https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/" class="block text-s text-white hover:underline">
                 <img src="{BUY_LOGO}" alt="Button Logo" class="mx-auto h-15 w-auto mb-2" />                
             </a>
-        </div>
-        
+        </div>      
         
         <div class="border-2 border-transparent bg-transparent-500 w-full md:w-44  ">
             <a href=" https://dexscreener.com/pulsechain/0xd3cc40772454a1eeadd36a69e31067646c04b0cb " class="block text-s text-white hover:underline">
