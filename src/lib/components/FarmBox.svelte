@@ -328,7 +328,7 @@
     <div class="shadow-lg p-2 border-t-transparent border-t-4 border-l-4 border-l-transparent border-transparent-500  text-[#ff0099] text-center rounded-lg">
     <div class="p-2">
         <div>
-            <h2 class="text-2xl">{info.displayName}</h2>
+            <h2 class="text-1xl">{info.displayName}</h2>
         </div>
         <div class="mt-6 space-y-1 text-center">
             <div class="flex justify-center items-center">
