@@ -324,7 +324,7 @@
 
 
   
-<div class="border-4 border-[#ff66c4] w-full bg-gray-transparent h-fit rounded-lg">
+<div class="border-4 border-[#ff66c4] w-full bg-[#000000a3] h-fit rounded-lg">
     <div class="shadow-lg p-2 border-t-transparent border-t-4 border-l-4 border-l-transparent border-transparent-500  text-[#ff0099] text-center rounded-lg">
     <div class="p-2">
         <div>
