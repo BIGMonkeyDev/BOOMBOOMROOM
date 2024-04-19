@@ -433,14 +433,14 @@
             <h6 class="text-xs text-green-200">({format.usd(stakedUSD)})</h6>
             {/if}
             <div class="flex space-x-1">
-                <div class="border-2 border-transparent bg-transparent-500 w-full relative">
+              <!--  <div class="border-2 border-transparent bg-transparent-500 w-full relative">
                     <img src="deposit.png" alt="Deposit" class="w-full h-full object-cover rounded-md">
                     <button 
                         on:click={openDepositModal} 
                         class="absolute inset-0 opacity-0 cursor-pointer p-4 rounded">
                         Deposit
-                    </button>
-                </div>
+                    </button> 
+                </div> -->
                 <div class="border-2 border-transparent bg-transparent-500 w-full relative">
                     <img src="withdraw.png" alt="Withdraw" class="w-full h-full object-cover rounded-md">
                     <button 
