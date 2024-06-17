@@ -11,7 +11,7 @@
     import { farms } from '$lib/config';
     import * as format from '$helpers/format';
     import * as priceHelper from '$helpers/prices';
-    import { FARM_TOKEN_ADDRESS, DEAD_ADDRESS } from '$lib/config';
+    import { FARM_TOKEN_ADDRESS, DEAD_ADDRESS , ZERO_ADDRESS} from '$lib/config';
 
     // ========= CONTRACTS =========== //
     import * as erc20 from '$contracts/erc20';
@@ -31,6 +31,8 @@
     let marketCapUSD;
     let pendingTotal;
     let burnedTotal;
+    let circulating;
+
 
     // ========= EVENTS ============ //
     const addToTVL = (event) => {
@@ -48,6 +50,8 @@
             marketCapUSD = marketCap * WPLS_USD;
             farmTokenUSD = formatEther(farmTokenWPLS) * WPLS_USD;
             burnedTotal = await erc20.balanceOf(FARM_TOKEN_ADDRESS, DEAD_ADDRESS);
+            circulating = await erc20.getCirculatingSupply(FARM_TOKEN_ADDRESS);
+
         } catch (error) {
             console.log('Error fetching price data');
         }
@@ -142,7 +146,21 @@
     </div>
 
     <!-- Box 5 -->
-    <div class="col-span-4 border-transparent border-4 relative ">
+    <div class="col-span-2 border-transparent border-4 relative ">
+        <img src="circulating.png" alt="Background Image" class="w-full h-full object-cover rounded-md">
+        <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center flex-col bg-opacity-80 bg-transparent-900 p-2 rounded">
+            <div>
+                {#if circulating}
+                    {format.wei(circulating)}
+                {:else}
+                    <div class="animate-spin">%</div>
+                {/if}
+            </div>
+        </div>
+    </div>
+
+    <!-- Box 6 -->
+    <div class="col-span-2 border-transparent border-4 relative ">
         <img src="burned.png" alt="Background Image" class="w-full h-full object-cover rounded-md">
         <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center flex-col bg-opacity-80 bg-transparent-900 p-4 rounded">
             <div>

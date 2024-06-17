@@ -21,6 +21,15 @@ export const totalSupply = async(contract) => {
     return data;
 }
 
+export const getCirculatingSupply = async(contract) => {
+    const data = await readContract({
+        address: contract,
+        abi: ERC20ABI,
+        functionName: 'getCirculatingSupply',
+    })
+    return data;
+}
+
 export const allowance = async(contract, address, spender) => {
     const data = await readContract({
         address: contract,
