@@ -76,11 +76,11 @@ export let farms = [
 
     {
         orderById: 3,
-        displayName: 'Mod/PLS v2',
+        displayName: 'R+/PLS v2',
         lpAbbreviation: 'LP',
         poolId: 2,
-        stakingToken: '0x453642E9e481ea45794825d3cE2b76A93247c4cB',
-        liquidityLink: 'https://pulsex.mypinata.cloud/ipfs/bafybeiesh56oijasgr7creubue6xt5anivxifrwd5a5argiz4orbed57qi/#/add/V1/0x24CD7adA7EB1Ce5950b49bef6d8b21C289f1eC77/PLS',
+        stakingToken: '0x1Fb6e0cD5AA712761b0F01897D1302828801D17D',
+        liquidityLink: 'https://pulsex.mypinata.cloud/ipfs/bafybeiesh56oijasgr7creubue6xt5anivxifrwd5a5argiz4orbed57qi/#/add/V2/0xD1fcD37A275Fd04197a40dBE481766a4e891C4C4/PLS',
         depositFee: 3,
         withdrawFee: 3,
         poolWeight: 3,
