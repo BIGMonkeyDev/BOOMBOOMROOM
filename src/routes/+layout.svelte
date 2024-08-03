@@ -122,7 +122,7 @@ for example <img src="{CONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-15 w-a
             </a>
         </div>   
         <div class="  w-full md:w-44 rounded">
-            <a href=" " class="block text-s text-white hover:underline">
+            <a href="https://thefountain.io/" class="block text-s text-white hover:underline">
                 <img src="{FOUNTAIN_LOGO}" alt="Fountain Logo" class="mx-auto h-20 w-auto mb-2" />  
             </a>
         </div> 

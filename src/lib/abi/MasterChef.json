@@ -2,23 +2,8 @@
 	{
 		"inputs": [
 			{
-				"internalType": "contract FarmToken",
-				"name": "_farmToken",
-				"type": "address"
-			},
-			{
-				"internalType": "address",
-				"name": "_devAddress",
-				"type": "address"
-			},
-			{
 				"internalType": "uint256",
 				"name": "_rewardsPerSec",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_startTimestamp",
 				"type": "uint256"
 			}
 		],
@@ -244,24 +229,6 @@
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "_pid",
-				"type": "uint256"
-			},
-			{
-				"internalType": "contract IERC20",
-				"name": "_newLpToken",
-				"type": "address"
-			}
-		],
-		"name": "EmergencyUpdateStakeAddress",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
 				"name": "_allocPoint",
 				"type": "uint256"
 			},
@@ -273,11 +240,6 @@
 			{
 				"internalType": "uint16",
 				"name": "_stakingFee",
-				"type": "uint16"
-			},
-			{
-				"internalType": "uint16",
-				"name": "_sustainabilityFee",
 				"type": "uint16"
 			},
 			{
@@ -300,6 +262,19 @@
 			}
 		],
 		"name": "authorize",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract FarmToken",
+				"name": "_farmToken",
+				"type": "address"
+			}
+		],
+		"name": "changeYieldSource",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -333,6 +308,24 @@
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_pid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "contract IERC20",
+				"name": "_newLpToken",
+				"type": "address"
+			}
+		],
+		"name": "emergencyRealityCheck",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -507,11 +500,6 @@
 				"internalType": "uint16",
 				"name": "stakingFee",
 				"type": "uint16"
-			},
-			{
-				"internalType": "uint16",
-				"name": "sustainabilityFee",
-				"type": "uint16"
 			}
 		],
 		"stateMutability": "view",
@@ -559,32 +547,17 @@
 	{
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "_pid",
-				"type": "uint256"
+				"internalType": "address",
+				"name": "_feeCollector",
+				"type": "address"
 			},
 			{
-				"internalType": "uint256",
-				"name": "_allocPoint",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint16",
-				"name": "_stakingFee",
-				"type": "uint16"
-			},
-			{
-				"internalType": "uint16",
-				"name": "_sustainabilityFee",
-				"type": "uint16"
-			},
-			{
-				"internalType": "bool",
-				"name": "_withUpdate",
-				"type": "bool"
+				"internalType": "address",
+				"name": "_servant",
+				"type": "address"
 			}
 		],
-		"name": "set",
+		"name": "setAll",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -598,19 +571,6 @@
 			}
 		],
 		"name": "setDevAddress",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "contract FarmToken",
-				"name": "_farmToken",
-				"type": "address"
-			}
-		],
-		"name": "setNewYieldToken",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -715,6 +675,34 @@
 			}
 		],
 		"name": "updatePool",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_pid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_allocPoint",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint16",
+				"name": "_stakingFee",
+				"type": "uint16"
+			},
+			{
+				"internalType": "bool",
+				"name": "_withUpdate",
+				"type": "bool"
+			}
+		],
+		"name": "updatePoolStats",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
