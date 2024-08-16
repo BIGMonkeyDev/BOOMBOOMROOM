@@ -89,6 +89,23 @@ export let farms = [
         zaps: false,
         type: Types.Farm,
         oracle: Oracles.PULSEX_V2
+    },
+
+    {
+        orderById: 3,
+        displayName: 'Bananas/Island v2',
+        lpAbbreviation: 'LP',
+        poolId: 3,
+        stakingToken: '0x9B2948eafE73A03F2899d06974FB9DafB9083C86',
+        liquidityLink: 'https://pulsex.mypinata.cloud/ipfs/bafybeiesh56oijasgr7creubue6xt5anivxifrwd5a5argiz4orbed57qi/#/add/V2/0xC6B28B2E3Bf9fF26299D540a4D654F7ade4dFdB0/0xDFB10795E6fE7D0Db68F9778Ba4C575a28E8Cd4c',
+        depositFee: 3,
+        withdrawFee: 3,
+        poolWeight: 3,
+        isActive: true,
+        compound: false,
+        zaps: false,
+        type: Types.Farm,
+        oracle: Oracles.PULSEX_V2
     }
 
 
