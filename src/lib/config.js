@@ -92,7 +92,7 @@ export let farms = [
     },
 
     {
-        orderById: 3,
+        orderById: 4,
         displayName: 'Bananas/Island v2',
         lpAbbreviation: 'LP',
         poolId: 3,
